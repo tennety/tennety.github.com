@@ -1,5 +1,6 @@
 ---
 title: "&#9998; Tennety Time! | Chandu Tennety's Blog"
+layout: blog
 ---
 
 {% for post in site.posts | limit: 2 %}
