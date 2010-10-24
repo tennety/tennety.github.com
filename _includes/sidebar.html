@@ -1,0 +1,54 @@
+<div id="sidebar">
+	<ul>
+		<li>
+		      <div id='search'>
+			<form action="http://tennety.github.com/search_results.html" id="cse-search-box">
+			  <div>
+			    <input type="hidden" name="cx" value="003188929139194788143:uq5c500oxok" />
+			    <input type="hidden" name="cof" value="FORID:11" />
+			    <input type="hidden" name="ie" value="UTF-8" />
+			    <input id='search-text' type="text" name="q" size="31" />
+			    <input id='search-submit' type="submit" name="sa" value="Search" />
+			  </div>
+			</form>
+		      </div>
+
+			<div style="clear: both;">&nbsp;</div>
+		</li>
+		<li>
+			<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+			<script>
+			new TWTR.Widget({
+			  version: 2,
+			  type: 'profile',
+			  rpp: 4,
+			  interval: 6000,
+			  width: 250,
+			  height: 300,
+			  theme: {
+			    shell: {
+			      background: '#e7e7e7',
+			      color: '#eb1d1d'
+			    },
+			    tweets: {
+			      background: '#ffffff',
+			      color: '#39393b',
+			      links: '#eb1d1d'
+			    }
+			  },
+			  features: {
+			    scrollbar: true,
+			    loop: false,
+			    live: true,
+			    hashtags: true,
+			    timestamp: true,
+			    avatars: false,
+			    behavior: 'default'
+			  }
+			}).render().setUser('tennety').start();
+			</script>
+					
+		</li>
+	</ul>
+</div>
+<!-- end #sidebar -->

@@ -20,29 +20,16 @@ Released   : 20100729
 </head>
 <body>
 <div id="wrapper">
-	<div id="header-wrapper">
-		<div id="header">
-			<div id="logo">
-				<h1><a href="#"><span>Tennety</span>Time!</a></h1>
-			</div>
-			<div id="menu">
-				<ul>
-					<li class="current_page_item"><a href="#">Home</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<!-- end #header -->
+
+	{%include header.html%}
+
 	<div id="page">
 		<div id="content">
 
 			<div class="post">
 			<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
 
-			<span class="article_date dark_blue">{{ page.date | date: "%d %B %Y" }}</span>, <span class="author">{{ page.author }}</span>
+			<span class="post_date">{{ page.date | date: "%d %B %Y" }}</span>, <span class="author">{{ page.author }}</span>
 
 			<br />
 			<br />
@@ -50,6 +37,8 @@ Released   : 20100729
 			{{ content }}
 
 			</div><!-- /blog_post -->
+
+			<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="tennety">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 
 			<! -- Comments section -->
 			<div id="disqus_thread"></div>
@@ -68,13 +57,16 @@ Released   : 20100729
 
 		</div>
 		<!-- end #content -->
+
+		{% include sidebar.html %}
+
 		<div style="clear: both;">&nbsp;</div>
 	</div>
 	<!-- end #page -->
 </div>
-<div id="footer">
-	<p>Copyright (c) 2008 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org/"> CSS Templates</a>.</p>
-</div>
+
+ {% include footer.html %}
+
 <!-- end #footer -->
 
 <script type="text/javascript">

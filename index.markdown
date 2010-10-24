@@ -7,9 +7,9 @@ layout: blog
 <div class="post">
 <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
 
-<span class="article_date dark_blue">{{ post.date | date: "%d %B %Y" }}</span>, <span class="author">{{ post.author }}</span>
+<span class="post_date">{{ post.date | date: "%d %B %Y" }}</span>, <span class="author">{{ post.author }}</span>
 
-			<a href="{{ post.url }}#disqus_thread">Comments</a>
+			<a class="comments" href="{{ post.url }}#disqus_thread">Comments</a>
 
 <br />
 <br />
