@@ -78,7 +78,6 @@ a:hover {
 	margin: 0;
 	padding: 0;
 	color: #000000;
-	border-right: 1px solid #BBBBBB;
 }
 
 #logo h1, #logo p {
@@ -159,9 +158,7 @@ a:hover {
 /* Social */
 
 #social {
-	border-left:1px solid #BBBBBB;
 	float:right;
-	padding:0 25px;
 	width: 250px;
 }
 
@@ -169,10 +166,11 @@ a:hover {
 	margin: 0px;
 	padding: 0px 0px 0px 10px;
 	list-style: none;
+	float: right;
 }
 
 #social li {
-	float: right;
+	float: left;
 	padding: 0 5px;
 }
 
@@ -180,15 +178,16 @@ a:hover {
 #social a {
 	display: block;
 	float: left;
+	margin-top: 10px;
 }
 
 #social a:hover {
-	border-bottom:2px solid #EB1D1D;
+	border-top:5px solid #EB1D1D;
+	margin-top: 5px;
 }
 
 #social img {
 	height: 20px;
-	margin-top: 13px;
 	border-width: 0px;
 }
 
@@ -222,6 +221,7 @@ a:hover {
 	margin: 0px;
 	padding: 0px 0px 0px 15px;
 	list-style: none;
+	float: right;
 }
 
 #menu li {
