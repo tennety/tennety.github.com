@@ -74,10 +74,11 @@ a:hover {
 
 #logo {
 	float: left;
-	width: 300px;
+	width: 400px;
 	margin: 0;
 	padding: 0;
 	color: #000000;
+	border-right: 1px solid #BBBBBB;
 }
 
 #logo h1, #logo p {
@@ -161,6 +162,7 @@ a:hover {
 	border-left:1px solid #BBBBBB;
 	float:right;
 	padding:0 25px;
+	width: 250px;
 }
 
 #social ul {
@@ -239,7 +241,7 @@ a:hover {
 	color: #0C0C0C;
 }
 
-#menu a:hover, #menu .current_page_item a {
+#menu a:hover {
 	background: #EB1D1D;
 	text-decoration: none;
 	color: #FFFFFF;
@@ -290,6 +292,7 @@ a:hover {
 
 #sp .toon {
 	height: 550px;
+	position: fixed;
 }
 
 
@@ -305,6 +308,11 @@ a:hover {
 .post {
 	margin-bottom: 30px;
 	padding: 0px 0px;
+	font-size: 1.2em;
+}
+
+.post h1 {
+	font-size: 2em;
 }
 
 .post .title {
@@ -448,6 +456,18 @@ a:hover {
 
 #footer a {
 	color: #6B4A45;
+}
+
+#home li.home a, /*--Home Page > Home Link--*/
+#about li.about a, /*--About Page > About Link--*/
+#services li.services a, /*--Services Page > Services Link--*/
+#portfolio li.portfolio a, /*--Portfolio Page > Portfolio Link--*/
+#contact li.contact a, /*--Contact Page > Contact Link--*/
+#blog li.blog a /*--Blog Page > Blog Link--*/
+{
+	background: #EB1D1D;
+	text-decoration: none;
+	color: #FFFFFF;
 }
 
 #twtr-widget-1 .twtr-doc, #twtr-widget-1 .twtr-hd a, #twtr-widget-1 h3, #twtr-widget-1 h4, #twtr-widget-1 .twtr-popular {
