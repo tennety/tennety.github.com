@@ -6,12 +6,12 @@ Released for free under a Creative Commons Attribution 2.5 License
 */
 
 body {
-	margin: 20px 0px 0px 0px;
 	padding: 0;
 	background: #FFFFFF;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	color: #3C3D3F;
+	margin: 0;
 }
 
 h1, h2, h3 {
@@ -22,11 +22,11 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 2.8em;
 }
 
 h2 {
-	font-size: 2.8em;
+	font-size: 2em;
 }
 
 h3 {
@@ -51,6 +51,7 @@ a:hover {
 }
 
 #wrapper {
+	width: 1000px;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -60,8 +61,13 @@ a:hover {
 #header {
 	overflow: hidden;
 	width: 1000px;
-	height: 50px;
-	margin: 0px auto 20px auto;
+	height: 60px;
+	margin: auto;
+	border-bottom: 1px solid #BBBBBB;
+	position: fixed;
+	background-color: #FFFFFF;
+	z-index: 100;
+	opacity: 0.80;
 }
 
 /* Logo */
@@ -248,12 +254,44 @@ a:hover {
 #page {
 	width: 1000px;
 	margin: 0 auto;
-	padding: 40px 0px 0px 0px;
-	border-top: 1px solid #BBBBBB;
+	padding: 100px 0px 0px 0px;
 }
 
 #page-bgtop {
 }
+
+/*Bio Wrapper*/
+#bio-wrapper {
+	float: left;
+	font-size: 16px;
+	width: 1000px;
+	margin: auto;
+	padding: 0;
+}
+
+#intro {
+	float: left;
+	width: 400px;
+	padding: 0 10px;
+}
+
+#bio {
+	float: right;
+	width: 250px;
+	padding: 0 10px;
+}
+
+#sp {
+	float: left;
+	width: 250px;
+	padding: 0 10px;
+}
+
+#sp .toon {
+	height: 550px;
+}
+
+
 /* Content */
 
 #content {
@@ -388,10 +426,13 @@ a:hover {
 #footer {
 	width: 1000px;
 	height: 50px;
-	margin: 0 auto;
-	padding: 0px 0 15px 0;
+	margin: auto;
 	border-top: 1px solid #BBBBBB;
 	font-family: Arial, Helvetica, sans-serif;
+	position: fixed;
+	background-color: #FFFFFF;
+	z-index: 100;
+	bottom: 0;
 }
 
 #footer p {
