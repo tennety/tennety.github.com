@@ -116,6 +116,16 @@ a:hover {
 
 /* Search */
 
+#home #search {
+	margin-bottom: 75px;
+	width: 250px;
+	padding: 0px 5px;
+}
+
+#home #search-text {
+	width: 180px;
+}
+
 #search {
 	float: right;
 	width: 280px;
@@ -158,7 +168,7 @@ a:hover {
 /* Social */
 
 #social {
-	float:right;
+	float: left;
 	width: 250px;
 }
 
@@ -166,7 +176,7 @@ a:hover {
 	margin: 0px;
 	padding: 0px 0px 0px 10px;
 	list-style: none;
-	float: right;
+	float: left;
 }
 
 #social li {
@@ -276,6 +286,7 @@ a:hover {
 	width: 400px;
 	padding: 0 10px;
 	font-size: 1.4em;
+	margin-top: -5px;
 }
 
 #bio {
@@ -445,7 +456,7 @@ a:hover {
 }
 
 #footer .copyright {
-	float: left;
+	float: right;
 	margin: 0;
 	padding: 20px 0px 0px 30px;
 	line-height: normal;
