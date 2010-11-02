@@ -289,6 +289,13 @@ a:hover {
 	margin-top: -5px;
 }
 
+#intro img {
+	height: 20px;
+	border-width: 1px;
+	border-color: #BBBBBB;
+	padding: 4px;
+}
+
 #bio {
 	float: right;
 	width: 250px;
@@ -314,6 +321,18 @@ a:hover {
 	width: 660px;
 	padding: 0px 0px 0px 0px;
 	background: #FFFFFF;
+}
+
+.post-list {
+	padding: 0 10px;
+}
+
+.post-header {
+	padding: 0 0 0 10px;
+}
+
+.post-header a {
+	color: #6B4A45;
 }
 
 .post {

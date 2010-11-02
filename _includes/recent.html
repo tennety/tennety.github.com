@@ -1,0 +1,6 @@
+<div class="post-list">
+	<h3>Recent posts.</h3>
+{% for post in site.posts | limit: 4 %}
+	<p class='post-header'><a href="{{ post.url }}">{{ post.title }}</a>, on {{ post.date | date: "%d %B %Y" }}</p>
+{% endfor %}
+</div>
