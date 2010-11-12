@@ -12,6 +12,7 @@ body {
 	font-size: 14px;
 	color: #3C3D3F;
 	margin: 0;
+	text-shadow: 0 1px 0 #fff;
 }
 
 h1, h2, h3 {
@@ -289,7 +290,7 @@ a:hover {
 	margin: auto;
 	padding: 0;
 	border-bottom: 1px solid #BBBBBB;
-	background: url("/images/city.png") repeat-x scroll 125px 300px transparent
+	background: url("/images/city.png") repeat-x scroll 125px 100px transparent
 }
 
 #intro {
@@ -336,6 +337,10 @@ a:hover {
 	float: right;
 	width: 250px;
 	padding: 0 10px;
+}
+
+#bio h2 {
+	padding: 20px 0px 10px 0px;
 }
 
 #sp {

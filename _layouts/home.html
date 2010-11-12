@@ -1,14 +1,16 @@
 {% include head.html %}
 
-<body id="home">
+<body id="{{ page.id }}">
 <div id="wrapper">
 
 {% include header.html %}
 
 	<div id="page">
+<div id='bio-wrapper'>
 
 			{{ content }}
 
+</div> <!-- end bio-wrapper -->
 		<div style="clear: both;">&nbsp;</div>
 
 		{% include interest.html %}
