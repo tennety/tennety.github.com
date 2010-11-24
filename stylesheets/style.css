@@ -7,7 +7,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 
 body {
 	padding: 0;
-	background: transparent url(http://localhost:4000/images/city.png) repeat-x scroll 250px 250px;
+	background: transparent url(/images/city.png) repeat-x scroll 250px 250px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	color: #3C3D3F;
