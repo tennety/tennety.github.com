@@ -1,6 +1,6 @@
 {% include head.html %}
 
-<body>
+<body id='blog'>
 <div id="wrapper">
 
 	{%include header.html%}
@@ -9,9 +9,11 @@
 		<div id="content">
 
 			<div class="post">
+				<div class='post-header'>
 			<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
 
 			<span class="post_date">{{ page.date | date: "%d %B %Y" }}</span>, <span class="author">{{ page.author }}</span>
+				</div>
 
 			<br />
 			<br />

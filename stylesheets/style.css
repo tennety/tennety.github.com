@@ -7,7 +7,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 
 body {
 	padding: 0;
-	background: #FFFFFF;
+	background: transparent url(http://localhost:4000/images/city.png) repeat-x scroll 250px 250px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	color: #3C3D3F;
@@ -290,7 +290,6 @@ a:hover {
 	margin: auto;
 	padding: 0;
 	border-bottom: 1px solid #BBBBBB;
-	background: url("/images/city.png") repeat-x scroll 125px 100px transparent
 }
 
 #intro {
@@ -306,31 +305,7 @@ a:hover {
 	border-width: 1px;
 	border-color: #BBBBBB;
 	padding: 4px;
-	float: left;
-}
-
-#intro span {
-	position: absolute;
-	top: 520px;
-}
-
-#intro a span{
-	display:none;
-}
-
-#intro a:hover span {
-	display: block;
-}
-
-#intro .social-menu ul {
-	list-style: none;
-	float: left;
-	margin: 0 -40px;
-}
-
-#intro .social-menu li {
-	float: left;
-	padding: 0 5px;
+	vertical-align: middle;
 }
 
 #bio {
@@ -376,8 +351,15 @@ a:hover {
 
 .post {
 	margin-bottom: 30px;
-	padding: 0px 0px;
+	padding: 0px 15px;
 	font-size: 1.2em;
+}
+
+.post .post-header {
+	background: #e7e7e7;
+	text-shadow: 0 1px 0 #fff;
+	-moz-border-radius:5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
 }
 
 .post h1 {
@@ -532,21 +514,25 @@ a:hover {
 	height: 170px;
 }
 
+#signal .toon {
+	height: 150px;
+	display: block;
+	margin: auto;
+}
+
 #contact-form .sender-info {
 	float: left;
-	padding: 0 20px;
+	padding: 0 10px;
 }
 
 #contact-form .message {
 	float: right;
 	width: 570px;
-	padding: 0 20px;
+	padding: 0 10px;
 }
 
 #contact-form .message textarea {
-	position: absolute;
-	left: 650px;
-	width: 435px;
+	width: 400px;
 	height: 80px;
 }
 
@@ -554,17 +540,17 @@ a:hover {
 	padding: 5px;
 }
 
-#contact-form .sender-info label {
-	width: 100px;
+#contact-form .label {
+	width: 140px;
+	float: left;
 }
 
 #contact-form .sender-info .field input {
-	position: absolute;
-	left: 280px;
 	width: 200px;
 }
 
 #contact-form .submit {
+	padding: 0 10px;
 }
 
 #contact .submit input
@@ -599,6 +585,8 @@ a:hover {
 #blog h1, #blog h2, #blog h3 {
 	font-family: 'Droid Sans', Arial, Helvetica, sans-serif;
 }
+
+#twtr-widget-1 { float: right; }
 
 #twtr-widget-1 .twtr-doc, #twtr-widget-1 .twtr-hd a, #twtr-widget-1 h3, #twtr-widget-1 h4, #twtr-widget-1 .twtr-popular {
 	font-family:Arial,Helvetica,sans-serif;

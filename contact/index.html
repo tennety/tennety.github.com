@@ -5,36 +5,38 @@ id: contact
 ---
 
 <div id='signal'>
+	<img class='toon' src='/images/blimp.png'>
 </div>
 
-<div id='form'>
+<div id="contact">
 	<h3>Contact me:</h3>
 	<form method="post" id="contact-form" action="http://tennety-mailbucket.heroku.com">
 		<input type="hidden" name="redirect" value="http://tennety.github.com">
 		<input type="hidden" name="subject" value="Message from tennety.github">
-	    <div class="sender-info">
-	      <div class="field inline_label">
-		<label class="inline">Name / Company:</label>
-		<input id='name' tabindex="1">
-	      </div>
-	      <div class="field inline_label">
-		<label class="inline">E-Mail:</label>
-		<input id='email' tabindex="2">
-	      </div>
-	      <div class="field inline_label">
-		<label class="inline">Phone Number:</label>
-		<input id='phone' tabindex="3">
-	      </div>
-		<div style="clear: both;">&nbsp;</div>
-	      <div class="submit">
-		<input type="submit" value="Send" tabindex="5">
-	      </div>
-	    </div>
+            <div class="sender-info">
+              <div class="field with-label">
+                <div class="label"><label class="field-label">Name / Company:</label></div>
+                <input id='name' tabindex="1">
+              </div>
+              <div class="field with-label">
+                <div class="label"><label class="field-label">E-Mail:</label></div>
+                <input id='email' tabindex="2">
+              </div>
+              <div class="field with-label">
+                <div class="label"><label class="field-label">Phone Number:</label></div>
+                <input id='phone' tabindex="3">
+              </div>
+            </div>
 	    <div class='message'>
-	      <div class="field inline_label textarea">
-		<label class="inline">Your Message:</label>
-		<textarea id='text' tabindex="4"></textarea>
-	      </div>
-	    </div>
-	</form>
+              <div class="field with-label textarea">
+                <div class="label"><label class="field-label">Your Message:</label></div>
+                <textarea id='text' tabindex="4"></textarea>
+              </div>
+            </div>
+	    <div style="clear: both;">&nbsp;</div>
+	    <div class="submit">
+                <input type="submit" value="Submit" tabindex="5">
+              </div>
+          </form>
+	
 </div>
