@@ -16,7 +16,8 @@ layout: blog
 <br />
 <br />
 
-{{ post.content }}
+{{ post.content | truncatewords:100,"" }}
+<a href="{{ post.url }}">[&#8230;]</a>
 </div><!-- /blog_post -->
 {% endfor %}
 
