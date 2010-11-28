@@ -272,6 +272,7 @@ a:hover {
 /* Page */
 
 #page {
+	min-height: 500px;
 	width: 1000px;
 	margin: 0 auto;
 	padding: 50px 0px 0px 0px;
@@ -351,7 +352,7 @@ a:hover {
 .post {
 	margin-bottom: 30px;
 	padding: 0px 15px;
-	font-size: 1.2em;
+	text-shadow: none;
 }
 
 .post .post-header {
