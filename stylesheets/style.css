@@ -353,6 +353,9 @@ a:hover {
 	padding: 0px 15px;
 	text-shadow: none;
 	background: #FFFFFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: 1px solid #E7E7E7;
 }
 
 .post .post-header {
@@ -361,7 +364,7 @@ a:hover {
 	-moz-border-radius:5px 5px 0 0;
 	border-radius: 5px 5px 0 0;
 	margin: 0 -15px;
-	padding: 0 10px;
+	padding: 5px 10px;
 }
 
 .post .post-header .comments {
