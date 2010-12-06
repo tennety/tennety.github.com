@@ -311,7 +311,8 @@ a:hover {
 
 #bio {
 	float: right;
-	width: 250px;
+	font-size: 1.1em;
+	width: 300px;
 	padding: 0 10px;
 }
 
@@ -321,7 +322,7 @@ a:hover {
 
 #sp {
 	float: left;
-	width: 250px;
+	width: 200px;
 	padding: 0 10px;
 }
 
