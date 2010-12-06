@@ -14,6 +14,8 @@
        	font-family: "DejaVu Sans Mono", Consolas, "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
 	overflow: auto;
 	font-size: 0.9em;
+	padding: 1em;
+	margin-bottom: 1em;
 }
 
 .PreProc {

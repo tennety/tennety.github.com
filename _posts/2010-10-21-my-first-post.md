@@ -2,11 +2,13 @@
 title: My First Post with Jekyll
 author: Chandu Tennety
 layout: post
+excerpt: |-
+  All the cool kids were doing it, so I tried it too. I moved from Wordpress to "Jekyll":http://jekyllrb.com. It sounded so perfect: no cluttered UI, no databases to maintain, "Git":http://git-scm.com for version control, and my trusty "text editor":http://www.vim.org to write posts with. What could _possibly_ go wrong? And since you are reading this, I was successful. Eventually.
 ---
 
-All the cool kids were doing it, so I tried it too. I moved from Wordpress to [Jekyll](http://jekyllrb.com). It sounded so perfect: no cluttered UI, no databases to maintain, [Git](http://git-scm.com) for version control, and my trusty [text editor](http://www.vim.org) to write posts with. What could _possibly_ go wrong?
-
-And since you are reading this, I was successful. Eventually.
+<div class="excerpt">
+{{ page.excerpt | textilize }}
+</div>
 
 It all started as a bug in my head when I was trying to educate myself on Rack and Sinatra. I saw mention of [Toto](http://cloudhead.io/toto) and Jekyll, and mused taking the dive for a while, but hesitated till the awesomely cool [Adam McCrea](http://adamlogic.com) gave a talk about Jekyll at our [Columbus Ruby Brigade](http://columbusrb.com). As with anything he gives a talk about, it all sounded perfectly clear and straightforward. Just write, he seemed to say, let Ruby do the rest. Of course, I thought, I'll have it up by tonight! It was a little harder than that, but rewarding nonetheless.
 
@@ -36,7 +38,16 @@ It took me a little while to get the hang of [Markdown](http://daringfireball.ne
 
 So when I started creating my landing and contact pages, I had to rely on good old HTML and CSS, since neither Markdown nor Textile (which are both meant primarily for HTML document creation) could help with page layouts.
 
-But [Liquid](http://www.liquidmarkup.org/) was a different story. It was beautifully powerful, with its filters and tags, and Jekyll's own extensions for it. There were still some things missing, however. For instance, good post excerpting. If I want to truncate my posts to only a few sentences or paragraphs, Liquid does not have a filter for it; I can only truncate to a number of words. Liquid allows me to manipulate post excerpts, but Jekyll has no concept of an excerpt. So I'm stuck with post previews that end mid-sentence [...]
+But [Liquid](http://www.liquidmarkup.org/) was a different story. It was beautifully powerful, with its filters and tags, and Jekyll's own extensions for it. <strike>There were still some things missing, however. For instance, good post excerpting. If I want to truncate my posts to only a few sentences or paragraphs, Liquid does not have a filter for it; I can only truncate to a number of words. Liquid allows me to manipulate post excerpts, but Jekyll has no concept of an excerpt. So I'm stuck with post previews that end mid-sentence [...]</strike> 
+
+**Update:** Search and ye shall receive. [Kevin Marsh](http://kevinmarsh.com/articles/2009/02/12/jekyll.html) tells us exactly how to use excerpts in Jekyll. I was sure that if it could be done, it would be through the metadata, I just didn't have the YAML skillz to do it. 
+
+#### Couple of gotchas: 
+
+  1. Since that post, Jekyll was updated with a Liquid filter to textilize excerpts, but it doesn't seem to have one for Markdown. So if you're primarily writing in Markdown, you'll still have to format your excerpt in Textile.
+  1. This may be a no duh, but still worth mentioning: Inside your index.html where you're putting your newly created post excerpts, you can refer to the post variable like this: <br /><span class="vim_block">{{ "{{ post.excerpt | textilize "}}}}</span><br /> However, if you're trying to stay DRY and want to call the same filter in your post itself, you'll have to do this: <br /><span class="vim_block">{{ "{{ page.excerpt | textilize "}}}}</span>
+
+  1. By the way, do yourself a favor and _never_ try to display Liquid code inside a Liquid template. If you must, [here's](http://tesoriere.com/2010/08/25/liquid-code-in-a-liquid-template-with-jekyll/) a resource that'll help.
 
 ### Syntax Highlighting - Vim to the Rescue!
 
@@ -44,12 +55,10 @@ Jekyll supports [Pygments](http://pygments.org/), a Python-based syntax highligh
 
 The redoubtable Vim provides a way out here (albeit a little clunky). With its ToHTML feature, Vim lets me export any code block to HTML, with the current color scheme included. With a few [handy changes](http://techspeak.plainlystated.com/2009/08/vim-tohtml-customization.html), it gives me a completely workable solution to display code in my posts that looks almost exactly how it does in my editor. Don't believe me? See for yourself:
 
----
 <div class="vim_block"><span class="PreProc">class</span>&nbsp;<span class="Type">OuterElement</span>&nbsp;&lt; <span class="Type">ActiveRecord</span>::<span class="Type">Base</span><br />
 &nbsp;&nbsp;<span class="Constant">has_many</span>&nbsp;<span class="Constant">:inner_elements</span><br />
 <span class="PreProc">end</span><br />
 </div>
----
 
 If that feels like too much work, there's always [Gist](http://gist.github.com) or [Pastie](http://pastie.org).
 

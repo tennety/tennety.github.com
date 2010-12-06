@@ -1,5 +1,5 @@
 ---
-title: "Tennety Time! | Chandu Tennety's Blog"
+title: "Chandu Tennety's Blog"
 layout: blog
 ---
 
@@ -16,7 +16,8 @@ layout: blog
 <br />
 <br />
 
-{{ post.content | truncatewords:100,"" }}
+{{ post.excerpt | textilize }}
+
 <a href="{{ post.url }}">[&#8230;]</a>
 </div><!-- /blog_post -->
 {% endfor %}
