@@ -333,7 +333,37 @@ a:hover {
 	display: block;
 }
 
+/* Archive Page -- uses same layout as home */
+#bio-wrapper .entry {
+	height: 40px;
+	padding: 5px 0;
+}
 
+#bio-wrapper .post-header {
+	float: left;
+	width: 330px;
+	text-align: right;
+}
+
+#bio-wrapper .post-header a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#bio-wrapper .post-header .metadata {
+	font-size: 0.9em;
+	color: #414141;
+}
+
+#bio-wrapper .excerpt {
+	float: right;
+	width: 640px;
+	min-height: 2em;
+}
+
+#bio-wrapper .excerpt p {
+	line-height: 120%;
+}
 /* Content */
 
 #content {
