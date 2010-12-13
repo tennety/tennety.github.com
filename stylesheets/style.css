@@ -334,34 +334,34 @@ a:hover {
 }
 
 /* Archive Page -- uses same layout as home */
-#bio-wrapper .entry {
+#all-posts .entry {
 	height: 40px;
 	padding: 5px 0;
 }
 
-#bio-wrapper .post-header {
+#all-posts .post-header {
 	float: left;
-	width: 330px;
+	width: 310px;
 	text-align: right;
 }
 
-#bio-wrapper .post-header a {
+#all-posts .post-header a {
 	text-decoration: none;
 	font-weight: bold;
 }
 
-#bio-wrapper .post-header .metadata {
+#all-posts .post-header .metadata {
 	font-size: 0.9em;
 	color: #414141;
 }
 
-#bio-wrapper .excerpt {
+#all-posts .excerpt {
 	float: right;
-	width: 640px;
+	width: 650px;
 	min-height: 2em;
 }
 
-#bio-wrapper .excerpt p {
+#all-posts .excerpt p {
 	line-height: 120%;
 }
 /* Content */
@@ -455,12 +455,23 @@ a:hover {
 	text-decoration: none;
 }
 
+.pagination .nav {
+	width: 33%;
+	min-height: 1em;
+}
+
 .pagination .older {
 	float: left;
 }
 
 .pagination .newer, .latest {
 	float: right;
+	text-align: right;
+}
+
+.pagination .archive {
+	text-align: center;
+	float: left;
 }
 
 /* Sidebar */

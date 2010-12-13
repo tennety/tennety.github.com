@@ -23,13 +23,16 @@ layout: blog
 {% endfor %}
 
 <div class='pagination'>
+<div class="nav older">
 	{% if paginator.next_page %}
-		<a class="older" href="/page{{ paginator.next_page }}">&#171 Older posts</a>
+		<a href="/page{{ paginator.next_page }}">&#171 Older posts</a>
 	{% endif %}
+</div>
+		<div class="nav archive"><a href="/archive">Archive</a></div>
 	{% if paginator.previous_page == 1 %}
-		<a class="latest" href="/">Latest posts &#187</a>
+		<div class="nav latest"><a href="/">Latest posts &#187</a></div>
 	{% elsif paginator.previous_page %}
-		<a class="newer" href="/page{{ paginator.previous_page }}">Newer posts &#187</a>
+		<div class="nav newer"><a href="/page{{ paginator.previous_page }}">Newer posts &#187</a></div>
 	{% endif %}
 	</div>
 

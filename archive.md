@@ -1,6 +1,7 @@
 ---
 title: Post Archives
-layout: home
+layout: archive
+id: blog
 ---
 
 <div class="post-list">
@@ -10,7 +11,7 @@ layout: home
 		<div class='post-header'><a href="{{ post.url }}">{{ post.title }}</a><div class='metadata'>on {{ post.date | date: "%d %B %Y" }}</div></div>
 		<div class='excerpt'>
 		{% if post.excerpt %}
-			{{ post.excerpt | textilize | truncatewords: 30 }}
+			{{ post.excerpt | textilize | truncatewords: 40 }}
 		{% endif %}
 		</div>
 	</div>
