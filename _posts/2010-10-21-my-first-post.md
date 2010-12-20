@@ -45,7 +45,7 @@ But [Liquid](http://www.liquidmarkup.org/) was a different story. It was beautif
 #### Couple of gotchas: 
 
   1. Since that post, Jekyll was updated with a Liquid filter to textilize excerpts, but it doesn't seem to have one for Markdown. So if you're primarily writing in Markdown, you'll still have to format your excerpt in Textile.
-  1. This may be a no duh, but still worth mentioning: Inside your index.html where you're putting your newly created post excerpts, you can refer to the post variable like this: <div class="inline vim_block">{{"{{ post.excerpt | textilize "}}}}</div> However, if you're trying to stay DRY and want to call the same filter in your post itself, you'll have to do this: <div class="inline vim_block">{{ "{{ page.excerpt | textilize "}}}}</div>
+  1. This may be a no duh, but still worth mentioning: Inside your index.html where you're putting your newly created post excerpts, you can refer to the post variable like this: <div class="inline vim_block">{{"{{ post.excerpt | textilize " }}}}</div> However, if you're trying to stay DRY and want to call the same filter in your post itself, you'll have to do this: <div class="inline vim_block">{{ "{{ page.excerpt | textilize " }}}}</div>
 
   1. By the way, do yourself a favor and _never_ try to display Liquid code inside a Liquid template. If you must, [here's](http://tesoriere.com/2010/08/25/liquid-code-in-a-liquid-template-with-jekyll/) a resource that'll help.
 
