@@ -30,16 +30,16 @@ At other times, however, we need to know not only when, but also _what_
 changed. For example, say Feature B is about to be picked up by User A.
 The QA Manager assigns the feature to that user, and expects a status
 update when the user has begun working on the feature. User A begins
-work in earnest, but has to leave on unplanned vacation. The QA Manager,
-agile as ever, assigns the feature to User C, who rolls up her sleeves
-and picks up the slack.
+work in earnest, but has to leave on an unplanned vacation. The QA
+Manager, agile as ever, assigns the feature to User C, who rolls up her
+sleeves and picks up the slack.
 
 In this process, however, Feature B has already undergone three changes
 in assignment status:
 
-  1. None Assigned to User A (made by QA Manager),
-  1. Not Started to Started (made by User A), and
-  1. User A to User C (made by QA Manager).
+  1. Assignee: none to User A (made by QA Manager),
+  1. Status: Not Started to Started (made by User A), and
+  1. Assignee: User A to User C (made by QA Manager).
 
 In this case, a simple `after_update` isn't enough, we need to know what
 kind of update was made. We could equivocate and provide all the changes
@@ -67,9 +67,9 @@ attribute was updated.
 Let's look at the changes once again with their `attribute_changed?`
 values:
 
-  1. None Assigned to User A <div class="inline vim_block"># assignee\_changed? => true</div>
-  1. Not Started to Started <div class="inline vim_block"># assignment\_status\_changed? => true</div>
-  1. User A to User C <div class="inline vim_block"># assignee\_changed? => true</div>
+  1. Assignee: none to User A <div class="inline vim_block"># assignee\_changed? => true<br /># assignment\_status\_changed? => false</div>
+  1. Status: Not Started to Started <div class="inline vim_block"># assignee\_changed? => false<br /># assignment\_status\_changed? => true</div>
+  1. Assignee: User A to User C <div class="inline vim_block"># assignee\_changed? => true<br /># assignment\_status\_changed? => false</div>
 
 Armed with this information, we can simply render different update
 activities with the same `after_update` callback: if the assignee has
