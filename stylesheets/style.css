@@ -7,7 +7,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 
 body {
 	padding: 0;
-	background: transparent url(/images/city.png) repeat-x scroll 250px 250px;
+	background: transparent url(/images/city.png) repeat-x scroll 250px 440px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	color: #3C3D3F;
@@ -334,6 +334,11 @@ a:hover {
 }
 
 /* Archive Page -- uses same layout as home */
+#all-posts { 
+  position: absolute;
+  width: 1000px;
+ }
+
 #all-posts .entry {
 	height: 40px;
 	padding: 5px 0;
@@ -591,6 +596,8 @@ a:hover {
 	color: #6B4A45;
 }
 
+/* Contact */
+
 #signal {
 	height: 170px;
 }
@@ -655,7 +662,8 @@ a:hover {
 #services li.services a, /*--Services Page > Services Link--*/
 #portfolio li.portfolio a, /*--Portfolio Page > Portfolio Link--*/
 #contact li.contact a, /*--Contact Page > Contact Link--*/
-#blog li.blog a /*--Blog Page > Blog Link--*/
+#blog li.blog a, /*--Blog Page > Blog Link--*/
+#resume li.contact a /*--Resume Page > Contact Link--*/
 {
 	background: #EB1D1D;
 	text-decoration: none;
@@ -675,3 +683,4 @@ a:hover {
 	font-family:Arial,Helvetica,sans-serif;
 }
 
+/*--RESUME--*/
