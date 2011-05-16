@@ -6,19 +6,20 @@ excerpt: |-
   ActiveRecord Observers are useful when we need to keep tabs on our models without cluttering up the model with distracting callbacks. The interesting part is getting the Observers to watch only what we want them to watch.
 ---
 
-Janova is not purely about running tests in isolation. It is a full-
-fledged multi-user environment, with user permissions that can be set
-to read-only or read-and-write. Under these conditions, it becomes
-important, especially for someone like a QA Manager to know which
-parts of an application were modified and by whom. In other words,
-Janova needs to track activities performed by users in order to
-maintain a record of test development within an application.
+[ Janova ](http://www.janova.us) is not purely about running tests in
+isolation. It is a full-fledged multi-user environment, with user
+permissions that can be set to read-only or read-and-write. Under these
+conditions, it becomes important, especially for someone like a QA
+Manager to know which parts of an application were modified and by
+whom. In other words, Janova needs to track activities performed by
+users in order to maintain a record of test development within an
+application.
 
 In the Rails world, this situation is an ideal candidate for utilizing
-the power and elegance of ActiveRecord Observers. I will not go into
-the details of how to get the Observers working, the Rails API does a
-more than adequate job. However, I would like to point out some
-nuggets I discovered in the process.
+ActiveRecord Observers. I will not go into the details of how they
+work, the [ Rails API ](http://railsapi.com/doc/rails-v2.3.8/classes/ActiveRecord/Observer.html)
+does a more than adequate job. In this post, I would like to point out
+some nuggets I discovered in the process.
 
 ### What Changed?
 
@@ -30,12 +31,12 @@ At other times, however, we need to know not only when, but also _what_
 changed. For example, say Feature B is about to be picked up by User A.
 The QA Manager assigns the feature to that user, and expects a status
 update when the user has begun working on the feature. User A begins
-work in earnest, but has to leave on an unplanned vacation. The QA
+work in earnest, but has to take an unplanned leave of absence. The QA
 Manager, agile as ever, assigns the feature to User C, who rolls up her
 sleeves and picks up the slack.
 
-In this process, however, Feature B has already undergone three changes
-in assignment status:
+In this process, Feature B has already undergone three changes in
+assignment status:
 
   1. Assignee: none to User A (made by QA Manager),
   1. Status: Not Started to Started (made by User A), and
