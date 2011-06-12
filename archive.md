@@ -11,7 +11,7 @@ id: blog
 		<div class='post-header'><a href="{{ post.url }}">{{ post.title }}</a><div class='metadata'>on {{ post.date | date: "%d %B %Y" }}</div></div>
 		<div class='excerpt'>
 		{% if post.excerpt %}
-			{{ post.excerpt | textilize | truncatewords: 40 }}
+			{{ post.excerpt | textilize }}
 		{% endif %}
 		</div>
 	</div>
