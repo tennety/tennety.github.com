@@ -21,7 +21,7 @@ h3. Skills at a Glance
       </div>
     </div>
 
-    <div id="professional" class="entry">
+    <div id="professional" class="entry" style='background: url(/images/sp-small.png) no-repeat 20% 70%'>
       <div class='post-header'>
 h3. Professional Experience
       </div>
