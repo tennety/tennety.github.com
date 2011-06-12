@@ -5,6 +5,7 @@ id: contact
 ---
 
 <div id='signal'>
+  <a href='/resume'>My Resume</a>
 	<img class='toon' src='/images/blimp.png'>
 </div>
 
@@ -13,30 +14,30 @@ id: contact
 	<form method="post" id="contact-form" action="http://tennety-mailbucket.heroku.com">
 		<input type="hidden" name="redirect" value="http://tennety.github.com">
 		<input type="hidden" name="subject" value="Message from tennety.github">
-            <div class="sender-info">
-              <div class="field with-label">
-                <div class="label"><label class="field-label">Name / Company:</label></div>
-                <input name='name' type='text' tabindex="1">
-              </div>
-              <div class="field with-label">
-                <div class="label"><label class="field-label">E-Mail:</label></div>
-                <input name='email' type='text' tabindex="2">
-              </div>
-              <div class="field with-label">
-                <div class="label"><label class="field-label">Phone Number:</label></div>
-                <input name='phone' type='text' tabindex="3">
-              </div>
-            </div>
+      <div class="sender-info">
+        <div class="field with-label">
+          <div class="label"><label class="field-label">Name / Company:</label></div>
+          <input name='name' type='text' tabindex="1">
+        </div>
+        <div class="field with-label">
+          <div class="label"><label class="field-label">E-Mail:</label></div>
+          <input name='email' type='text' tabindex="2">
+        </div>
+        <div class="field with-label">
+          <div class="label"><label class="field-label">Phone Number:</label></div>
+          <input name='phone' type='text' tabindex="3">
+        </div>
+      </div>
 	    <div class='message'>
-              <div class="field with-label textarea">
-                <div class="label"><label class="field-label">Your Message:</label></div>
-                <textarea name='text' type='text' tabindex="4"></textarea>
-              </div>
-            </div>
+        <div class="field with-label textarea">
+          <div class="label"><label class="field-label">Your Message:</label></div>
+          <textarea name='text' type='text' tabindex="4"></textarea>
+        </div>
+      </div>
 	    <div style="clear: both;">&nbsp;</div>
 	    <div class="submit">
-                <input type="submit" value="Submit" tabindex="5">
-              </div>
-          </form>
+        <input type="submit" value="Submit" tabindex="5">
+      </div>
+  </form>
 	
 </div>

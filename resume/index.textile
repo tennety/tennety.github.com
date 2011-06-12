@@ -1,0 +1,83 @@
+---
+title: Resume -- Ruby, Rails, jQuery
+layout: archive
+id: resume
+---
+
+<div class="post-list">
+  <div id="cv">
+    <div id="skills" class="entry">
+      <div class='post-header'>
+h3. Skills at a Glance
+      </div>
+      <div class='excerpt'>
+
+|*Ruby:*| Rubygems, Rails, Sinatra, Cucumber, RSpec, Watir, WatirCraft|
+|*Web:*| JavaScript, jQuery, HTML & CSS, HAML|
+|*Tools:*| Git, SVN, Vim|
+|*Other:*| Java, JESS (functional expert systems), C|
+|*Graphics:*| Photoshop, GIMP, Inkscape|
+
+      </div>
+    </div>
+
+    <div id="professional" class="entry">
+      <div class='post-header'>
+h3. Professional Experience
+      </div>
+      <div class='excerpt'>
+table{width: 100%}.
+|_<. Ruby Developer|_. Janova, New Albany OH|>. November 2009 -- current|
+New development and maintenance of a complex Ruby on Rails product. Features include:
+* Rich, Ajax-heavy jQuery-based user interface (supports Firefox, Safari, Chrome, IE 7-9)
+* User and Account authentication using Clearance
+* Background jobs (Delayed::Job), message queues (RabbitMQ)
+* Interfacing with Amazon EC2 workers
+* Deployment (Git- and Gem-based) across multiple environments
+
+*Technologies Used*: Rails, Git, RabbitMQ, jQuery, JSON, PostgreSQL
+<hr />
+
+table{width: 100%}.
+|_<. QA Analyst|_. Gap Inc Direct, Groveport OH|>. June 2008 -- October 2009|
+Build and maintain Cucumber, RSpec and Watir based test suite.
+* Develop Object-Oriented Ruby API for the system under test
+* Build re-usable modules and step definitions across 3 different projects
+
+*Technologies Used*: SVN, Oracle 10i, XML
+      </div>
+    </div>
+
+    <div id="education" class="entry">
+
+      <div class='post-header'>
+h3. Education
+      </div>
+      <div class='excerpt'>
+
+table{width: 100%}.
+|_<. MS, Industrial and Systems Eng|_. Ohio University, Athens OH|>. September 2002 -- June 2007 |
+
+Thesis on Manufacturing Feature Recognition using an Expert System
+
+*Technologies Used*: Java, JNI, C, JESS, CVS
+
+      </div>
+    </div>
+
+    <div id="talks" class="entry">
+
+      <div class='post-header'>
+h3. Lightning Talks
+      </div>
+      <div class='excerpt'>
+
+I am active in the local Ruby community. These are slides from lightning talks I gave at the "Columbus Ruby Brigade":http://columbusrb.com.
+
+* So, You Want a Jekyll Site? "slides":/presentations/Jekyll.pdf
+* What Changed? (Updating ActiveRecord Objects) "slides":/presentations/what_changed.pdf
+
+      </div>
+    </div>
+  </div>
+</div>
