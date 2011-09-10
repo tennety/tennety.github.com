@@ -97,6 +97,11 @@ blockquote {
 	padding: 0;
 	color: #000000;
 	font-size: 1.4em;
+  background: url('/images/sp-small.png') 108% 2% no-repeat;
+}
+
+#home #logo {
+  background: none;
 }
 
 #logo h1, #logo p {
@@ -351,7 +356,7 @@ blockquote {
  }
 
 #all-posts .entry {
-  margin: 1em 0;
+  margin: 0 0 1em 0;
 	padding: 5px 0;
   position: relative;
 }
@@ -677,7 +682,7 @@ blockquote {
 #portfolio li.portfolio a, /*--Portfolio Page > Portfolio Link--*/
 #contact li.contact a, /*--Contact Page > Contact Link--*/
 #blog li.blog a, /*--Blog Page > Blog Link--*/
-#resume li.contact a /*--Resume Page > Contact Link--*/
+#resume li.resume a /*--Resume Page > Resume Link--*/
 {
 	background: #EB1D1D;
 	text-decoration: none;
