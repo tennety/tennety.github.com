@@ -20,17 +20,17 @@ The easiest version of the process, roughly, was this:
 
 That was pretty much it. I followed the process, and here I am. Of course, there were some setbacks, and I've tried to present them as honestly as I could in the following sections.
 
-### I'm not a Web Developer.
+### Jekyll ain't CMS
 
-You must be doing a facepalm about now. Why on earth would I put myself through this if I'm not a web developer? Why couldn't I ensconce myself in the impersonal embrace of a CMS? The answer, of course, is that I did. I went from Blogspot to Blogger to self-hosted Wordpress. But each time I found myself trying to tweak the system, move things around. And each time I hit a wall of PHP that I just could not brute force my way through. I was less like a bull in a china shop, and more like a toddler with sphaghetti. Poked my eyes out a few times, and there was sauce everywhere.
+Why on earth would I put myself through this when I could easily ensconce myself in the impersonal embrace of a CMS instead? The answer, of course, is that I did. I went from Blogspot to Blogger to self-hosted Wordpress. But each time I found myself trying to tweak the system, move things around. And each time I hit a wall of PHP that I just could not brute force my way through. I was less like a bull in a china shop, and more like a toddler with sphaghetti. Poked my eyes out a few times, and there was sauce everywhere.
 
-Then I found Ruby, Vim and Git. And I was in love. I started looking for ways to use Ruby for blogging. Rails still seemed like overkill, though. Right about then, Jekyll came on the radar, as I mentioned earlier in the post. So fork in hand, I dove in.
+Then I found Ruby, Vim and Git. And I was in love. I started looking for ways to use Ruby for blogging. Rails (remember the blog in 15 minutes?) still seemed like overkill, though. Right about then, Jekyll came on the radar, as I mentioned earlier in the post. So fork in hand, I dove in.
 
 I'm still editing reams of HTML and CSS, and it shows that it's far from perfect. Which leads me to my next issue.
 
 ### Markdown? Textile? Liquid?
 
-It took me a little while to get the hang of [Markdown](http://daringfireball.net/projects/markdown/), I'm still trying to understand [Textile](http://www.textism.com/tools/textile/). But when it comes to real HTML-fu, [HAML](http://haml-lang.com/) is my favorite. However, Jekyll has no support for HAML out of the box. Yes, there are [forks](https://github.com/henrik/jekyll) that incorporate HAML, but does Github Pages support it? I don't believe it does. 
+It took me a little while to get the hang of [Markdown](http://daringfireball.net/projects/markdown/), I'm still trying to understand [Textile](http://www.textism.com/tools/textile/). But when it comes to real HTML-fu, [HAML](http://haml-lang.com/) is my favorite. However, Jekyll has no support for HAML out of the box. Yes, there are [forks](https://github.com/henrik/jekyll) that incorporate HAML, but does Github Pages support it? I don't believe it does.
 
 So when I started creating my landing and contact pages, I had to rely on good old HTML and CSS, since neither Markdown nor Textile (which are both meant primarily for HTML document creation) could help with page layouts.
 
@@ -38,7 +38,7 @@ But [Liquid](http://www.liquidmarkup.org/) was a different story. It was beautif
 
 **Update:** Search and ye shall receive. [Kevin Marsh](http://kevinmarsh.com/articles/2009/02/12/jekyll.html) tells us exactly how to use excerpts in Jekyll. I was sure that if it could be done, it would be through the metadata, I just didn't have the YAML skillz to do it. 
 
-#### Couple of gotchas: 
+#### Couple of gotchas
 
   1. Since that post, Jekyll was updated with a Liquid filter to textilize excerpts, but it doesn't seem to have one for Markdown. So if you're primarily writing in Markdown, you'll still have to format your excerpt in Textile.
   1. This may be a no duh, but still worth mentioning: Inside your index.html where you're putting your newly created post excerpts, you can refer to the post variable like this: <div class="inline vim_block">{{"{{ post.excerpt | textilize " }}}}</div> However, if you're trying to stay DRY and want to call the same filter in your post itself, you'll have to do this: <div class="inline vim_block">{{ "{{ page.excerpt | textilize " }}}}</div>
@@ -47,9 +47,9 @@ But [Liquid](http://www.liquidmarkup.org/) was a different story. It was beautif
 
 ### Syntax Highlighting - Vim to the Rescue!
 
-Jekyll supports [Pygments](http://pygments.org/), a Python-based syntax highlighter that supports arguably every language out there. But I don't know Python. Another facepalm moment there.
+Jekyll supports [Pygments](http://pygments.org/), a Python-based syntax highlighter that supports arguably every language out there. But for those of you who haven't played around with Python (like me), the redoubtable Vim provides a way out here (albeit a little clunky).
 
-The redoubtable Vim provides a way out here (albeit a little clunky). With its ToHTML feature, Vim lets me export any code block to HTML, with the current color scheme included. With a few [handy changes](http://techspeak.plainlystated.com/2009/08/vim-tohtml-customization.html), it gives me a completely workable solution to display code in my posts that looks almost exactly how it does in my editor. Don't believe me? See for yourself:
+With its ToHTML feature, Vim lets me export any code block to HTML, with the current color scheme included. With a few [handy changes](http://techspeak.plainlystated.com/2009/08/vim-tohtml-customization.html), it gives me a completely workable solution to display code in my posts that looks almost exactly how it does in my editor. Don't believe me? See for yourself:
 
 <div class="vim_block"><span class="PreProc">class</span>&nbsp;<span class="Type">OuterElement</span>&nbsp;&lt; <span class="Type">ActiveRecord</span>::<span class="Type">Base</span><br />
 &nbsp;&nbsp;<span class="Constant">has_many</span>&nbsp;<span class="Constant">:inner_elements</span><br />
