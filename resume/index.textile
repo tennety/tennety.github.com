@@ -21,7 +21,22 @@ h3. Skills at a Glance
       </div>
     </div>
 
-    <div id="professional" class="entry" style='background: url(/images/sp-small.png) no-repeat 20% 70%'>
+    <div id="community" class="entry">
+
+      <div class='post-header'>
+h3. Community Participation
+      </div>
+      <div class='excerpt'>
+Authored and maintains a Ruby library: "Erlang C Calculator":https://rubygems.org/gems/erlang_c_calculator
+
+Active in the local Ruby community. Slides from my lightning talks at the "Columbus Ruby Brigade":http://columbusrb.com:
+
+* So, You Want a Jekyll Site? "slides":/presentations/Jekyll.pdf
+* What Changed? (Updating ActiveRecord Objects) "slides":/presentations/what_changed.pdf
+
+      </div>
+    </div>
+    <div id="professional" class="entry">
       <div class='post-header'>
 h3. Professional Experience
       </div>
@@ -61,21 +76,6 @@ table{width: 100%}.
 Thesis on Manufacturing Feature Recognition using an Expert System
 
 *Technologies Used*: Java, JNI, C, JESS, CVS
-
-      </div>
-    </div>
-
-    <div id="talks" class="entry">
-
-      <div class='post-header'>
-h3. Lightning Talks
-      </div>
-      <div class='excerpt'>
-
-I am active in the local Ruby community. These are slides from lightning talks I gave at the "Columbus Ruby Brigade":http://columbusrb.com.
-
-* So, You Want a Jekyll Site? "slides":/presentations/Jekyll.pdf
-* What Changed? (Updating ActiveRecord Objects) "slides":/presentations/what_changed.pdf
 
       </div>
     </div>
