@@ -395,6 +395,10 @@ blockquote {
 	padding: 0px 0px 0px 0px;
 }
 
+.clear {
+  clear: both;
+}
+
 .post-list ul .post-header {
 	list-style: none;
 }
